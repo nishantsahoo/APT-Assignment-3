@@ -1,4 +1,3 @@
-import collections
 import random
 indices = list(range(0, 100))
 userDictionary = {}  # empty dictionary
@@ -40,4 +39,3 @@ for key, value in userDictionary.items():
 
 if not found:
     print("Not found")
-
