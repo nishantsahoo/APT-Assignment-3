@@ -5,8 +5,12 @@ intCount = 0
 stringCount = 0
 counter = 0
 while 1:
-    value = input('Enter a value: ')
+    value = str(input('Enter a value: '))
     ans = input('Want to enter another value? y/n: ')
+    if value.isdigit():
+        intCount += 1
+    if not value.isdigit():
+        stringCount += 1
     key = random.choice(indices)
     userDictionary.update({key: value})
     indices.remove(key)
@@ -21,8 +25,8 @@ concString = ""
 
 if intCount == counter:
     for key, value in userDictionary.items():
-        sum += value
-    print("Sum of values: " + sum)
+        sum += int(value)
+    print("Sum of values: " + str(sum))
 
 if stringCount == counter:
     for key, value in userDictionary.items():
