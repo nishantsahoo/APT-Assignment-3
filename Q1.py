@@ -43,3 +43,12 @@ for key, value in userDictionary.items():
 
 if not found:
     print("Not found")
+
+print(sorted(userDictionary))
+
+newUserDictionary = {}
+for each in sorted(userDictionary):
+    newUserDictionary.update({each: userDictionary[each]})
+
+del userDictionary
+print(newUserDictionary)
