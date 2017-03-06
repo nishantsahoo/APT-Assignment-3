@@ -19,7 +19,6 @@ while 1:
         break
 
 print(userDictionary)
-
 sum = 0
 concString = ""
 
