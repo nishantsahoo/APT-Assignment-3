@@ -25,7 +25,7 @@ concString = ""
 if intCount == counter:
     for key, value in userDictionary.items():
         sum += int(value)
-    print("Sum of values: " + str(sum))
+    print("Average: " + str(sum/counter))
 
 if stringCount == counter:
     for key, value in userDictionary.items():
@@ -46,8 +46,7 @@ if not found:
 print(sorted(userDictionary))
 
 newUserDictionary = {}
-for each in sorted(userDictionary):
-    newUserDictionary.update({each: userDictionary[each]})
+for key, value in sorted(userDictionary.items()):
+    newUserDictionary.update({key: value})
 
-del userDictionary
 print(newUserDictionary)
