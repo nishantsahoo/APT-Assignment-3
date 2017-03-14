@@ -43,10 +43,4 @@ for key, value in userDictionary.items():
 if not found:
     print("Not found")
 
-print(sorted(userDictionary))
-
-newUserDictionary = {}
-for key, value in sorted(userDictionary.items()):
-    newUserDictionary.update({key: value})
-
-print(newUserDictionary)
+print("Sorted dictionary" + sorted(userDictionary.items()))
