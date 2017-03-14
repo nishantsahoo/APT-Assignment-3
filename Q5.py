@@ -16,6 +16,7 @@ fileString = ""
 i = 1
 file = open("New file.txt", 'r')
 filelist = file.readlines()
+
 for each in filelist:
     val = each.strip('\n')
     print(val)
