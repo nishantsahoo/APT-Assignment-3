@@ -44,3 +44,6 @@ if not found:
     print("Not found")
 
 print("Sorted dictionary: " + str(sorted(userDictionary.items())))
+
+sortDict = sorted(userDictionary.items())
+print(sortDict)
