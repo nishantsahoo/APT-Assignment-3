@@ -9,7 +9,7 @@ for i in range(0, 3):
 for i in range(0, 3):
     l2_list[i] = (l2_list[i].strip())[:-1]
 for i in range(0, 3):
-    result.append(str((int(l1_list[i])+int(l2_list[i]))))
+    result.append(str(int(l1_list[i])+int(l2_list[i])))
 for i in range(0, 3):
     result[i] += chr((ord("x")+i))
 answer = " + ".join(result)
