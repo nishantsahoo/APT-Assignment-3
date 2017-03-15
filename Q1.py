@@ -44,4 +44,4 @@ if not found:
     print("Not found")
 
 sortDict = sorted(userDictionary.items())
-print(sortDict)
+print("Sorted dictionary: " + sortDict)
